@@ -3,4 +3,6 @@
     <string name="main_activity_user_name">%1$s %2$s</string>
     <string name="friends">Друзья</string>
     <string name="friends_optimised">Друзья 2 сезон</string>
+    <string name="dialogs">Диалоги</string>
+    <string name="news">Новости</string>
 </resources>

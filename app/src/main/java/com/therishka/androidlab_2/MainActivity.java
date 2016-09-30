@@ -32,6 +32,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         Button toFriendsOptimisedBtn = (Button) findViewById(R.id.to_friends_activity_optimised);
         toFriendsOptimisedBtn.setOnClickListener(this);
 
+        Button toDialogs = (Button) findViewById(R.id.to_dialogs);
+        toDialogs.setOnClickListener(this);
+
+        Button toNews = (Button) findViewById(R.id.to_news);
+        toNews.setOnClickListener(this);
+
         setUserNameAndShowButtons();
     }
 
@@ -43,6 +49,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.to_friends_activity_optimised:
                 toFriendsOptimised();
+                break;
+            case R.id.to_dialogs:
+                toDialogs();
+                break;
+            case R.id.to_news:
+                toNews();
                 break;
         }
     }
@@ -78,5 +90,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private void toFriendsOptimised() {
         Intent friendsIntent = new Intent(this, FriendsActivityOptimised.class);
         startActivity(friendsIntent);
+    }
+    private void toDialogs() {
+        Intent dialogsIntent = new Intent(this, DialogsActivity.class);
+        startActivity(dialogsIntent);
+    }
+    private void toNews() {
+        Intent newsIntent = new Intent(this, NewsActivity.class);
+        startActivity(newsIntent);
     }
 }
